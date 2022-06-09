@@ -3,8 +3,6 @@
 include $_SERVER['DOCUMENT_ROOT'].'/includes/classes/campanha.php';
 include $_SERVER['DOCUMENT_ROOT'].'/includes/session.php';
 
-$conexao = conexao::getInstance();
-
 if($_POST) {
 
     $acao = (isset($_POST['acao']) && $_POST['acao'] != '') ? $_POST['acao'] : null;
