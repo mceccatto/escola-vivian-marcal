@@ -231,10 +231,12 @@ tinymce.init( {
 
 buscaCampanhas(1);
 function buscaCampanhas(pagina, campanha = "") {
+    acao = "busca";
     $.ajax( {
-        url: "../includes/restrito/script-campanhas-buscar.php",
+        url: "../includes/restrito/script-campanhas.php",
         method: "POST",
         data: {
+            acao:acao,
             pagina:pagina,
             campanha:campanha
         },
@@ -258,6 +260,7 @@ $("#campanha").keyup(function() {
 
 $("#publicar_campanha").on("click", function(event) {
     event.preventDefault();
+    acao = "publicar_campanha";
 	tinymce.triggerSave();
     campanhaTitulo = $("#campanhaTitulo").val();
     campanhaInicio = $("#campanhaInicio").val();
@@ -301,9 +304,10 @@ $("#publicar_campanha").on("click", function(event) {
     $.ajax( {
         type: "POST",
         dataType: "json",
-        url: "../includes/restrito/script-campanhas-nova.php",
+        url: "../includes/restrito/script-campanhas.php",
         async: true,
         data: {
+            acao:acao,
             campanhaTitulo:campanhaTitulo,
             campanhaInicio:campanhaInicio,
 			campanhaTermino:campanhaTermino,
