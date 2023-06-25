@@ -11,7 +11,7 @@
     $contador = 0;
     ?>
     <div class="container py-5">
-        <div class="row">
+	<div class="row">
     		<div class="col-sm-12 col-md-12 col-lg-8 mb-3">
     			<div class="text-center">
     				<h1 class="fw-light mb-5">Campanhas</h1>
@@ -23,37 +23,24 @@
     			</div>
     		</div>
     	</div>
-        <div class="row">
-            <div class="col-sm-12 mb-3">
-            <?php if(!empty($consultaCampanhas)) : ?>
-            <?php foreach($consultaCampanhas as $consultaCampanha) : ?>
-                <?php if($contador++ % 2 === 0) : ?>
-                <div class="row featurette">
-                    <div class="col-md-7">
-                        <h4 class="featurette-heading"><?php echo $consultaCampanha->titulo; ?></h4>
-                        <?php echo $consultaCampanha->conteudo; ?>
-                    </div>
-                    <div class="col-md-5">
-                        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="<?php echo $url; ?>/img/500x500.jpg" alt="">
-                    </div>
-                </div>
-                <hr class="featurette-divider my-5">
-                <?php else: ?>
-                <div class="row featurette">
-                    <div class="col-md-7 order-md-2">
-                        <h4 class="featurette-heading"><?php echo $consultaCampanha->titulo; ?></h4>
-                        <?php echo $consultaCampanha->conteudo; ?>
-                    </div>
-                    <div class="col-md-5 order-md-1">
-                        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="<?php echo $url; ?>/img/500x500.jpg" alt="">
-                    </div>
-                </div>
-                <hr class="featurette-divider my-5">
-                <?php endif; ?>
-            <?php endforeach; ?>
-            <?php else: ?>
-                <p>Não foi encontrada nenhuma campanha ativa.</p>
-            <?php endif; ?>
-            </div>
-        </div>
+    	<div class="row">
+    		<div class="col-sm-12 col-md-12 col-lg-12 justify mb-3">
+				<?php if(!empty($consultaCampanhas)) : ?>
+				<?php foreach($consultaCampanhas as $consultaCampanha) : ?>
+				<div class="card mb-3">
+    				<div class="row g-0">
+    					<div class="col-md-12">
+    						<div class="card-body card-campanha">
+    							<h5 class="card-title"><?php echo $consultaCampanha->titulo; ?></h5>
+    							<p class="card-text"><?php echo $consultaCampanha->conteudo; ?></p>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+				<?php endforeach; ?>
+				<?php else: ?>
+					<p>Não foi encontrada nenhuma campanha ativa.</p>
+				<?php endif; ?>
+    		</div>
+    	</div>
     </div>

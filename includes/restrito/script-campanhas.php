@@ -3,6 +3,8 @@
 include $_SERVER['DOCUMENT_ROOT'].'/includes/classes/campanha.php';
 include $_SERVER['DOCUMENT_ROOT'].'/includes/session.php';
 
+$conexao = conexao::getInstance();
+
 if($_POST) {
 
     $acao = (isset($_POST['acao']) && $_POST['acao'] != '') ? $_POST['acao'] : null;
@@ -320,7 +322,7 @@ if($_POST) {
                 <div class="col-12">
                     <label for="campanhaConteudoEditar" class="form-label">Conteúdo <i class="fas fa-asterisk align-top obrigatorio"></i></label>
                     <textarea class="form-control shadow-none" id="campanhaConteudoEditar" required>'.$consulta->conteudo.'</textarea>
-                    <span class="float-end pt-1">Editado por '.$consulta->usuario_cadastro.' em '.date('d/m/Y \à\s H:i:s', strtotime($consulta->data_cadastro)).'</span>
+                    <span class="float-end pt-1">Cadastrado por '.$consulta->usuario_cadastro.' em '.date('d/m/Y \à\s H:i:s', strtotime($consulta->data_cadastro)).'</span>
                 </div>
             </div>
             <button class="w-100 btn btn-verde btn-lg shadow-none" type="submit" id="atualizarCampanha"><i class="fas fa-sync-alt"></i> Atualizar Campanha</button>

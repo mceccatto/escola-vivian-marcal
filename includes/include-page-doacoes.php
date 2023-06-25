@@ -1,4 +1,4 @@
-    <div class="container py-5">
+	<div class="container py-5">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-7 justify mb-3">
                 <div class="text-center">
@@ -13,6 +13,8 @@
                 CNPJ: 78.174.448/0001-19<br>
                 Agência: 1622-5<br>
                 Conta: 29378-4</p>
+				<textarea class="text-monospace" id="brcodepix" rows="<?php echo $linhas; ?>" cols="130" onclick="copiar()"><?php echo $pix; ?></textarea>
+				<?php echo '<img src="data:image/png;base64,' . $imageString . '"></p>'; ?>
             </div>
             <div class="col-sm-12 col-md-12 col-lg-5 mb-5">
                 <img class="img-fluid" src="img/doacoes.png" alt="doacoes">

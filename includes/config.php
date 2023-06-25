@@ -5,16 +5,16 @@ header('Cache-Control: post-check=0, pre-check=0', false);
 header('Pragma: no-cache');
 
 //DEFINIÇÕES DE RETORNO DE ERROS DO PHP
-ini_set('display_errors',1);
-ini_set('display_startup_erros',1);
-error_reporting(E_ALL);
+//ini_set('display_errors',1);
+//ini_set('display_startup_erros',1);
+//error_reporting(E_ALL);
 
 //DEFINIÇÃO DO TIME ZONE DO SERVIDOR PHP
 date_default_timezone_set('America/Sao_Paulo');
 
 //DEFINIÇÕES DE CONEXÃO COM BANCO DE DADOS
 define('HOST', 'localhost');
-define('DBNAME', 'codelabs_evm');
+define('DBNAME', 'db_evm');
 define('USER', 'codelabs_evm');
 define('PASSWORD', 'codelabs_evm');
 

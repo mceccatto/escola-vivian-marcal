@@ -7,7 +7,7 @@
     		</div>
     		<div class="col-sm-12 col-md-12 col-lg-4 justify mb-3">
     			<div class="text-center">
-    				<h1 class="fw-light mb-5">Histórico</h1>
+    				<h1 class="fw-light mb-5">Mais Vistos</h1>
     			</div>
     		</div>
     	</div>
@@ -20,9 +20,9 @@
     					</div>
     					<div class="col-md-8">
     						<div class="card-body">
-    							<h5 class="card-title">Card title</h5>
-    							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    							<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    							<h5 class="card-title">Reportagem Band Mulher</h5>
+    							<p class="card-text">Na última quarta-feira, tivemos o privilégio de receber uma reportagem especial sobre as Escolas Vivian Marçal no programa Band Mulher...</p>
+    							<p class="card-text"><small class="text-muted">Leia mais...</small></p>
     						</div>
     					</div>
     				</div>
@@ -34,9 +34,9 @@
     					</div>
     					<div class="col-md-8">
     						<div class="card-body">
-    							<h5 class="card-title">Card title</h5>
-    							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    							<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    							<h5 class="card-title">Reunião com Ney Leprevost</h5>
+    							<p class="card-text">A presidente Ivonete Wandembruck teve a oportunidade de se reunir com o deputado estadual Ney Leprevost, nesta terça-feira (6), para tratar de um assunto de extrema importância...</p>
+    							<p class="card-text"><small class="text-muted">Leia mais...</small></p>
     						</div>
     					</div>
     				</div>
@@ -48,9 +48,9 @@
     					</div>
     					<div class="col-md-8">
     						<div class="card-body">
-    							<h5 class="card-title">Card title</h5>
-    							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    							<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    							<h5 class="card-title">Revitalização da pintura da Sede</h5>
+    							<p class="card-text">Nos últimos meses, em parceria com a voluntários da empresa @exxonmobil, e funcionários voluntários demos início a um trabalho de revitalização da pintura dos...</p>
+    							<p class="card-text"><small class="text-muted">Leia mais...</small></p>
     						</div>
     					</div>
     				</div>
@@ -77,26 +77,14 @@
     			<div class="list-group">
     				<a href="#" class="list-group-item list-group-item-action" aria-current="true">
     					<div class="d-flex w-100 justify-content-between">
-    						<h5 class="mb-1">Comunicado</h5>
-    						<small class="text-muted">10/04/2022</small>
+    						<h6 class="mb-1">Reportagem Band Mulher</h6>
     					</div>
-    					<p class="mb-1">Exemplo de postagem no blog</p>
     					<small><i class="fas fa-eye"></i> Visualizar</small>
     				</a>
     				<a href="#" class="list-group-item list-group-item-action">
     					<div class="d-flex w-100 justify-content-between">
-    						<h5 class="mb-1">Evento</h5>
-    						<small class="text-muted">10/04/2022</small>
+    						<h6 class="mb-1">Reunião com Ney Leprevost</h6>
     					</div>
-    					<p class="mb-1">Exemplo de postagem no blog</p>
-    					<small><i class="fas fa-eye"></i> Visualizar</small>
-    				</a>
-    				<a href="#" class="list-group-item list-group-item-action">
-    					<div class="d-flex w-100 justify-content-between">
-    						<h5 class="mb-1">Arrecadação</h5>
-    						<small class="text-muted">09/04/2022</small>
-    					</div>
-    					<p class="mb-1">Exemplo de postagem no blog</p>
     					<small><i class="fas fa-eye"></i> Visualizar</small>
     				</a>
     			</div>
